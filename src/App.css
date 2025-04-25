@@ -1,0 +1,50 @@
+/* Set dark background for the entire app */
+.App {
+  background-color: #121212; /* Dark background */
+  color: white; /* Light text color for contrast */
+  min-height: 100vh; /* Ensure the app takes full height of the viewport */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.moviehed {
+  background-color: silver; /* Silver background */
+  padding: 20px; /* Add padding inside the div */
+  border-radius: 8px; /* Round the corners slightly */
+  margin-bottom: 20px; /* Space below the header */
+  text-align: center; /* Center the content */
+}
+
+.moviehed h1 {
+  color: #333; /* Dark color for the title */
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
+  font-size: 2.5em; /* Larger title size */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.moviehed input, .moviehed button {
+  margin-top: 10px; /* Space for inputs and buttons */
+  padding: 10px; /* Add some padding to input and buttons */
+  font-size: 1.1em; /* Slightly larger font for ease of reading */
+}
+
+.moviehed input {
+  width: 200px; /* Adjust width of input */
+  margin-right: 10px; /* Space between input and button */
+}
+
+.moviehed button {
+  background-color: #007bff; /* A blue color for the button */
+  color: white; /* White text on the button */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s; /* Smooth color change on hover */
+}
+
+.moviehed button:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+}

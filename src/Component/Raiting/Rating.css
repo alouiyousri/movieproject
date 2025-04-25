@@ -1,0 +1,44 @@
+/* Rating.css */
+
+/* Wrapper for the rating component */
+.ant-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Star size */
+  }
+  
+  /* Align the stars horizontally with some space in between */
+  .ant-rate .ant-rate-star {
+    margin-right: 5px; /* Space between stars */
+  }
+  
+  /* Hover effect for stars */
+  .ant-rate .ant-rate-star:not(.ant-rate-star-full):hover {
+    color: #ffd700; /* Gold color on hover */
+  }
+  
+  /* Disabled state for stars */
+  .ant-rate-disabled .ant-rate-star {
+    color: #d3d3d3; /* Light gray for disabled stars */
+  }
+  
+  /* Tooltip styles for the rating stars */
+  .ant-rate-tooltip-inner {
+    background-color: #333; /* Dark background for tooltip */
+    color: white; /* White text color for tooltips */
+    font-size: 14px; /* Slightly smaller font size */
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners for tooltips */
+  }
+  
+  /* Container for the Flex layout (if needed for additional styling) */
+  .ant-flex {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .ant-flex .ant-rate {
+    margin-bottom: 10px;
+  }
+  

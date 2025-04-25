@@ -1,0 +1,74 @@
+.card {
+  width: 18rem; /* Fixed width for consistency */
+  margin: 15px; /* Spacing between cards */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+  border: 1px solid #ddd; /* Default border for consistency */
+  border-radius: 8px; /* Optional: rounded corners */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border: 3px solid crimson;
+  box-shadow: 0px 0px 15px crimson, 0px 0px 15px crimson inset;
+}
+
+.card img {
+  width: 100%; /* Ensure the image takes the full width of the card */
+  height: 200px; /* Fixed height for uniformity across all cards */
+  object-fit: cover; /* Ensure the image scales properly without distortion */
+  object-position: center; /* Center the image within the container */
+  display: block; /* Remove any unwanted spacing below the image */
+}
+
+.card-body {
+  padding: 15px; /* Consistent padding for all card bodies */
+  text-align: center;
+  min-height: 250px; /* Ensure all card bodies have the same height for alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  flex-grow: 1; /* Allow text to take available space */
+}
+
+.card .btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  align-self: center; /* Center the button within the flex container */
+}
+
+.card .btn-primary {
+  background-color: #007bff; /* Customize button color */
+  border-color: #007bff;
+}
+
+.card .btn-primary:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+  border-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .card {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 18rem; /* Prevent cards from becoming too wide */
+      margin: 15px auto; /* Center cards on smaller screens */
+  }
+
+  .card img {
+      height: 200px; /* Maintain the same height on smaller screens */
+  }
+}
