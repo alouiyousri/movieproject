@@ -3,6 +3,7 @@ import './Moviecard.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Rating from '../Raiting/Rating';
+import { Link } from 'react-router-dom';
 
 const Moviecard = ({ movie }) => {
   return (
@@ -15,7 +16,10 @@ const Moviecard = ({ movie }) => {
           <Card.Text>
             <Rating isMovieRating={true} movieRating={movie.rating} />
           </Card.Text>
+          <Link to={`/movie/${movie.id}`} className='link' state ={{ movie }}> 
           <Button variant='primary'>See Trailer</Button>
+          </Link>
+          
         </Card.Body>
       </Card>
     </div>

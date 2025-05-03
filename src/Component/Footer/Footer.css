@@ -1,0 +1,20 @@
+.footer {
+    background-color: #121212; 
+    color: #f1f1f1;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.95rem;
+    position: relative; /* Use 'fixed' if you want it always at the bottom */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer p {
+    margin: 0.3rem 0;
+  }
+
+    .footer a {
+        color: #007bff;
+        text-decoration: none;
+    }
